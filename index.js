@@ -1,8 +1,5 @@
 require("dotenv").config();
-const fs = require('node:fs');
-const path = require('node:path');
-const { Client, Collection, Events, GatewayIntentBits, MessageEmbed } = require('discord.js')
-const axios = require("axios");
+const { Client, Events, GatewayIntentBits } = require('discord.js')
 const token = process.env.TOKEN;
 const { initializeCommands, handleCommandExecution } = require('./commandHandler');
 
